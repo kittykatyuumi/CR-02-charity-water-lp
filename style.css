@@ -1,0 +1,145 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: #FFF7E1;
+  color: #003366;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #FFF7E1;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.hero-text {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  z-index: 3;
+  color: #FFF7E1;
+  max-width: 40%;
+  background: rgba(17, 15, 12, 0); /* using approved color with 40% transparency */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+.hero-text h1,
+.hero-text h3 {
+  text-align: left;
+  margin: 0 0 1rem;
+}
+
+.hero-text .blue {
+  color: #77A8BB;
+}
+
+.hero-text .yellow {
+  color: #FFC907;
+}
+
+.donate-btn {
+  background-color: #FFC907;
+  color: #003366;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #FED8C1;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  background-color: #FFF7E1;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #BF6C46;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.section-content {
+  font-size: 1.2rem;
+  color: #003366;
+  max-width: 800px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #FFF7E1;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    z-index: 10;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    bottom: 20%;
+  }
+}

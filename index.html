@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Add your HTML here -->
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">
+    <img src="img/cw_logo-2.png" alt="charity: water logo">
+  </div>
+  <div class="menu-icon" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</div>
+  <div class="nav-links">
+    <a href="#take-action">TAKE ACTION</a>
+    <a href="#about-us">ABOUT US</a>
+    <a href="#why-water">WHY WATER</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <img src="img/charity_water_official_photo.jpg" alt="Children at water tap" class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-text-box">
+    <div class="hero-text">
+      <h1>
+        Clean <span class="blue">Water</span>
+        Starts With <span class="yellow">You</span> -<br />
+        And Reaches a <span class="yellow">Whole Community</span>.
+      </h1>
+      <h3>
+        <span class="yellow">Give</span> what you can - every <span class="blue">drop</span> brings clean water and impact you can see.
+      </h3>
+      <button class="donate-btn">Donate</button>
+    </div>
+  </div>
+</section>
+
+<!-- Take Action Section -->
+<section id="take-action" style="background-color: #FFF7E1;">
+  <h2 class="section-title">Take Action</h2>
+  <p class="section-content">
+    Fundraise, donate, or spread the word. Everyone can play a part in bringing clean water to those in need.
+  </p>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" style="background-color: #FED8C1;">
+  <h2 class="section-title">About Us</h2>
+  <p class="section-content">
+    charity: water is a nonprofit organization bringing clean and safe drinking water to people in developing countries. 100% of public donations go directly to water projects.
+  </p>
+</section>
+
+<!-- Why Water Section -->
+<section id="why-water" style="background-color: #77A8BB;">
+  <h2 class="section-title">Why Water</h2>
+  <p class="section-content">
+    Access to clean water improves health, empowers education, and creates economic opportunities. It's the first step out of poverty.
+  </p>
+</section>
+
+<script>
+  // Mobile menu toggle handled inline for simplicity
+</script>
+
 </body>
 </html>
